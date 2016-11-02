@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AssessmentGithub" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S37-zd-tX0">
+                                <rect key="frame" x="180" y="77" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="dih-lh-LSH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixs-pz-e8L">
+                                <rect key="frame" x="180" y="296" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnj-A2-SXQ">
+                                <rect key="frame" x="180" y="363" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZt-Z8-SSP">
+                                <rect key="frame" x="180" y="428" width="240" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GZt-Z8-SSP" firstAttribute="leading" secondItem="Vnj-A2-SXQ" secondAttribute="leading" id="1nm-yp-KWM"/>
+                            <constraint firstItem="ixs-pz-e8L" firstAttribute="top" secondItem="S37-zd-tX0" secondAttribute="bottom" constant="91" id="DhJ-pm-D12"/>
+                            <constraint firstItem="Vnj-A2-SXQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N4K-4q-Y0F"/>
+                            <constraint firstItem="GZt-Z8-SSP" firstAttribute="top" secondItem="Vnj-A2-SXQ" secondAttribute="bottom" constant="44" id="bze-Xd-VuE"/>
+                            <constraint firstItem="S37-zd-tX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFf-lJ-T8f"/>
+                            <constraint firstItem="ixs-pz-e8L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3c-uu-KED"/>
+                            <constraint firstItem="S37-zd-tX0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="iMX-ZL-TyW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="S37-zd-tX0" secondAttribute="bottom" constant="395" id="iua-e3-PHZ"/>
+                            <constraint firstItem="Vnj-A2-SXQ" firstAttribute="top" secondItem="ixs-pz-e8L" secondAttribute="bottom" constant="46" id="pXU-Pt-qIJ"/>
+                            <constraint firstItem="ixs-pz-e8L" firstAttribute="leading" secondItem="S37-zd-tX0" secondAttribute="leading" id="vC9-uo-67a"/>
+                            <constraint firstItem="GZt-Z8-SSP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ykQ-d8-gkD"/>
+                            <constraint firstItem="Vnj-A2-SXQ" firstAttribute="leading" secondItem="ixs-pz-e8L" secondAttribute="leading" id="zZH-so-w7p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="githubImage" destination="S37-zd-tX0" id="imu-wP-cax"/>
+                        <outlet property="idLabel" destination="Vnj-A2-SXQ" id="gcr-Ns-5bx"/>
+                        <outlet property="loginLabel" destination="ixs-pz-e8L" id="jc9-0U-saF"/>
+                        <outlet property="urlLabel" destination="GZt-Z8-SSP" id="moG-ew-vCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="218"/>
+        </scene>
+    </scenes>
+</document>
